@@ -1,0 +1,20 @@
+{
+  "name": "Intro to Python",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true,
+        "python.formatting.provider": "none",
+        "black-formatter.args": ["--line-length", "88"]
+      }
+    }
+  },
+  "postCreateCommand": "python --version"
+}
